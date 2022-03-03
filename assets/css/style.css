@@ -1,0 +1,550 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+  /* ============================= */
+ /*********** Default CSS *********/
+/*==============================*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 2.5rem;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+h1{
+    color: #151923;
+    font-weight: 600;
+    font-size: 3.7rem;
+    line-height: 5rem;
+}
+h2{
+    color: #000000;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+h4{
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.section-padding{
+    padding: 3rem 0;
+}
+.btn-style-1{
+    color: #151923;
+    border: 0.1rem solid red;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background: transparent;
+    transition: .5s;
+}
+.btn-style-1:hover{
+    background-color: #151923;
+    color: #fff;
+}
+.rate{
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 2rem;
+    top: 1.5rem;
+    border: 0.1rem solid red;
+    border-radius: 50%;
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    background: red;
+    line-height: 4.7rem;
+    font-weight: 500;
+}
+  /* ============================ */
+ /********** Header CSS **********/
+/*==============================*/
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header-top-menu ul{
+    display: flex;
+    align-items: center;
+}
+.header-top-menu ul li{
+    padding: 1rem 2rem;
+}
+.header-top-menu ul li input[type="search"]{
+    color: #7f7f7f;
+    height: 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border: none;
+}
+.header-top-menu ul li input[type="search"]:focus{
+    outline: 0;
+}
+.header-top-menu ul li button{
+    border: none;
+    background: none;
+}
+.header-top-menu ul li .icon{
+    color: #7f7f7f;
+    font-size: 3rem;
+    position: relative;
+}
+.header-top-menu ul li .item-counter {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: red;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.header-top-menu ul li .cart-amount{
+    color: #7f7f7f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.header-top-menu ul li .cart-amount span{
+    color: red;
+}
+.header-top-menu ul .search{
+    display: flex;
+    align-items: center;
+}
+
+.banner-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.banner-area .menu ul{
+    display: flex;
+}
+.banner-area .menu ul li{
+    margin-right: 8rem;
+}
+.banner-area .menu ul li a{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+.banner-area .menu ul li a:hover,
+.banner-area .menu ul li.active a{
+    border-bottom: 0.3rem solid red;
+}
+.call {
+    position: relative;
+    bottom: -26px;
+}
+.call p{
+    color: #151923;
+    opacity: .50;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: 11rem;
+}
+.header-bottom{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,#e6e8fd 70%,#faf6e3 30%);
+}
+.bottom-left{
+    flex: 0 0 50%;
+    padding-left: 5rem;
+}
+.bottom-right{
+    flex: 0 0 50%;
+}
+.bottom-left p{
+    color: #151923;
+    font-weight: 400;
+    font-size: 1.4rem;
+    width: 80%;
+    margin-top: 2.5rem;
+}
+.bottom-left a{
+    margin-top: 6rem;
+}
+.bottom-right img {
+    padding: 2.3rem 4rem;
+    display: block;
+}
+
+  /* ============================ */
+ /*********** Shop CSS ***********/
+/*==============================*/
+.shop{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3rem;
+    text-align: center;
+}
+.shop-item{
+    border: 0.1rem solid red;
+    padding: 4rem 2rem 1.5rem;
+    transition: .5s;
+}
+.shop-item:hover{
+    box-shadow: 0 0 0.8rem 1rem #0000FF;
+}
+.shop-item img {
+    height: 5.6rem;
+    width: 5.8rem;
+    object-fit: contain;
+}
+.shop-item h3{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #151923;
+    margin-top: 4rem;
+}
+.shop-item p{
+    color: #151923;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+  /* ============================ */
+ /******** supplier CSS **********/
+/*==============================*/
+.our-supplier{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 38rem;
+}
+.supplie-item{
+    position: relative;
+}
+.supplie-item > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.supplie-item .item{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.item img {
+    color: rgb(255, 255, 255);
+    width: 65px;
+    height: 40px;
+    object-fit: contain;
+}
+.item h4{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+  /* ============================ */
+ /********* Sellers CSS **********/
+/*==============================*/
+.sellers-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+    text-align: center;
+}
+.sellers h2{
+    margin-bottom: 4rem;
+}
+.seller-item{
+    transition: .5s;
+}
+.seller-item:hover {
+    box-shadow: 0 0 0.8rem 1.5rem #bdc3c7;
+}    
+.seller-img {
+    background: #f4f4f4;
+    height: 30rem;
+    position: relative;
+}
+.item-action{
+    display: flex;
+    opacity: 0;
+    /* border: 0.1rem solid red; */
+    max-width: 24rem;
+    border: none;
+    background: #fff;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    transition: all .3s ease;
+}
+.seller-item:hover .item-action{
+    /* display: flex; */
+    opacity: 1;
+}  
+.item-icon{
+    flex: 0 0 33.33%;
+    border-right: 0.1rem solid #95a5a6;
+}
+.item-icon:last-child{
+    border-right: 0;
+}
+.item-action .item-icon i{
+    color: #7f8c8d;
+    font-size: 1.5rem;
+    margin-right: 0.1rem;
+}
+.item-action .item-icon i:hover,
+.item-action .item-icon .active i{
+    color: red;
+}
+.seller-item .seller-img .green span{
+    background: green;
+    border: 0.1rem solid green;
+}
+.seller-img img{
+    height: 17.5rem;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
+    margin-top: 6rem;
+}
+.seller-details h4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.seller-details span{
+    text-decoration: line-through;
+    margin-right: 1rem;
+    color: #878787;
+}
+.seller-details .red{
+    color: red;
+}
+
+
+  /* ============================ */
+ /******** Contact CSS ***********/
+/*==============================*/
+.contact-area{
+    background: url(../images/main_1170px.jpg) no-repeat scroll 0 0 / cover;
+    margin: 3rem 0;
+}
+.contact h1{
+    width: 42%;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.input-item input[type="text"],
+.input-item input[type="email"]{
+    width: 35%;
+    padding: 1rem 2rem;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid #fff;
+    display: inline-block;
+}
+.input-item input[type="text"]:focus,
+.input-item input[type="email"]:focus{
+    outline: 0;
+}
+.input-item input[type="text"]::placeholder,
+.input-item input[type="email"]::placeholder{
+    color: #ffffff;
+}
+.input-item input[type="submit"]{
+    border: 0.1rem solid #fff;
+    margin-top: 4.5rem;
+    color: #fff;
+    transition-duration: 1.5s;
+}
+.input-item input[type="submit"]:hover{
+    background: #efc406;
+    color: #000000;
+    border: 0.1rem solid #000000;
+}
+
+  /* ============================ */
+ /******** Products CSS **********/
+/*==============================*/
+.products-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+}
+.products h2{
+    margin-bottom: 4rem;
+}
+.product-img {
+    background: #f4f4f4;
+    height: 26.5rem;
+    padding-top: 4rem;
+    position: relative;
+}
+.product-item{
+    transition: .5s;
+}
+.product-item:hover{
+    box-shadow: 0 0 0.8rem 1.5rem #bdc3c7;
+}
+.product-item .product-img img{
+    width: 17.5rem;
+    height: 17.5rem;
+    display: block;
+    object-fit: contain;
+    margin: auto;
+}
+.product-item .product-details{
+    text-align: center;
+}
+.product-details h4{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.product-item .product-details span{
+    text-decoration: line-through;
+    color: #95a5a6;
+    margin-right: 2rem;
+}
+.product-item .product-details .red{
+    color: red;
+}
+.product-item .product-img .green-rate span{
+    background: green;
+    border: 0.1rem solid green;
+}
+.product-item .product-img .green-rate .rate,
+.product-item .product-img .rate{
+    padding-left: 0.6rem;
+}
+  /* ============================ */
+ /********** Bottom CSS **********/
+/*==============================*/
+.bottom-top {
+    display: flex;
+    align-items: center;
+    border-top: 0.2rem solid #dfe4ea;
+    border-bottom: 0.2rem solid #dfe4ea;
+    padding: 3rem 0;
+}
+.bottom-item{
+    flex: 0 0 25%;
+}
+.bottom-item img,
+.bottom-item h3{
+    margin-bottom: 3rem;
+}
+
+.bottom-details ul li{
+    margin-bottom: 1rem;
+}
+.bottom-details ul li a{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: .50;
+}
+.bottom-item p{
+    color: #000000;
+    opacity: .50;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+.letter form{
+    display: flex;
+    align-items: center;
+}
+.letter input[type="email"]{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 1rem 2rem;
+    border: 0.1rem solid #000000;
+    opacity: .70;
+}
+.letter button img{
+   margin: auto;
+} 
+.letter button{
+   padding: .8rem 4rem;
+   background: #f0120f;
+   border: 0.1rem solid #f0120f;
+   text-align: center;
+}
+.letter button:hover{
+    border: 0.1rem solid #000000;
+}
+.bottom-footer p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000000;
+    opacity: .40;
+    margin-top: 1rem;
+}
