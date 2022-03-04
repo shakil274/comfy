@@ -65,6 +65,11 @@ h4{
     font-weight: 400;
     font-size: 1.8rem;
 }
+h5{
+    font-weight: 600;
+    font-size: 3.7rem;
+    line-height: 5rem;
+}
 .section-padding{
     padding: 3rem 0;
 }
@@ -383,7 +388,7 @@ h4{
     background: url(../images/main_1170px.jpg) no-repeat scroll 0 0 / cover;
     margin: 3rem 0;
 }
-.contact h1{
+.contact h5{
     width: 42%;
     color: #fff;
     margin-bottom: 3rem;
